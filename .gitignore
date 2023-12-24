@@ -2,3 +2,5 @@
 /ThreadManagerShouldTest/x64/Debug/ThreadMa.d3515d04.tlog
 /ThreadManagerShouldTest/x64/Debug
 /.vs/OptimalNumberOfThreads
+/x64/Debug
+/packages/Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7
