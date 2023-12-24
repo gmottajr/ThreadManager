@@ -1,8 +1,4 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
-
-/.vs/OptimalNumberOfThreads
-/OptimalNumberOfThreads/x64/Debug
+﻿/OptimalNumberOfThreads/x64/Debug
 /ThreadManagerShouldTest/x64/Debug/ThreadMa.d3515d04.tlog
 /ThreadManagerShouldTest/x64/Debug
+/.vs/OptimalNumberOfThreads
