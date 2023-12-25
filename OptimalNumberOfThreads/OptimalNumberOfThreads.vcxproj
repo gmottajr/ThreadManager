@@ -131,7 +131,7 @@
     <ClCompile Include="ThreadManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ThreadManager.h" />
+    <ClInclude Include="ThreadManager.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

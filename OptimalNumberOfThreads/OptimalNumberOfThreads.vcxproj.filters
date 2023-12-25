@@ -23,7 +23,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ThreadManager.h">
+    <ClInclude Include="ThreadManager.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

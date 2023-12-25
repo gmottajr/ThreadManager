@@ -1,7 +1,8 @@
 #include "pch.h"
 
 #include <gtest/gtest.h>
-#include "../OptimalNumberOfThreads/ThreadManager.h"
+#include "../OptimalNumberOfThreads/ThreadManager.hpp"
+#include "../OptimalNumberOfThreads/ThreadManager.cpp"
 
 class ThreadManagerShould : public ::testing::Test {
 protected:

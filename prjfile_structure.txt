@@ -1,0 +1,229 @@
+Folder PATH listing for volume Windows
+Volume serial number is 5A08-4076
+C:.
+│   .gitignore
+│   OptimalNumberOfThreads.sln
+│   prjfile_structure.txt
+│   README.md
+│   
+├───OptimalNumberOfThreads
+│   │   OptimalNumberOfThreads.cpp
+│   │   OptimalNumberOfThreads.vcxproj
+│   │   OptimalNumberOfThreads.vcxproj.filters
+│   │   OptimalNumberOfThreads.vcxproj.user
+│   │   ThreadManager.cpp
+│   │   ThreadManager.h
+│   │   
+│   └───x64
+│       └───Debug
+│           │   OptimalNumberOfThreads.Build.CppClean.log
+│           │   OptimalNumberOfThreads.exe.recipe
+│           │   OptimalNumberOfThreads.ilk
+│           │   OptimalNumberOfThreads.log
+│           │   OptimalNumberOfThreads.obj
+│           │   OptimalNumberOfThreads.vcxproj.FileListAbsolute.txt
+│           │   ThreadManager.obj
+│           │   vc143.idb
+│           │   vc143.pdb
+│           │   
+│           └───OptimalN.1c333baf.tlog
+│                   CL.command.1.tlog
+│                   Cl.items.tlog
+│                   CL.read.1.tlog
+│                   CL.write.1.tlog
+│                   link.command.1.tlog
+│                   link.read.1.tlog
+│                   link.write.1.tlog
+│                   OptimalNumberOfThreads.lastbuildstate
+│                   
+├───packages
+│   └───Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7
+│       │   .signature.p7s
+│       │   license (MIT).txt
+│       │   Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7.nupkg
+│       │   ThirdPartyNotices.txt
+│       │   
+│       ├───build
+│       │   └───native
+│       │       │   Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.targets
+│       │       │   
+│       │       ├───1028
+│       │       │       googletest.propertiesui.xml
+│       │       │       
+│       │       ├───1029
+│       │       │       googletest.propertiesui.xml
+│       │       │       
+│       │       ├───1031
+│       │       │       googletest.propertiesui.xml
+│       │       │       
+│       │       ├───1033
+│       │       │       googletest.propertiesui.xml
+│       │       │       
+│       │       ├───1034
+│       │       │       googletest.propertiesui.xml
+│       │       │       
+│       │       ├───1036
+│       │       │       googletest.propertiesui.xml
+│       │       │       
+│       │       ├───1040
+│       │       │       googletest.propertiesui.xml
+│       │       │       
+│       │       ├───1041
+│       │       │       googletest.propertiesui.xml
+│       │       │       
+│       │       ├───1042
+│       │       │       googletest.propertiesui.xml
+│       │       │       
+│       │       ├───1045
+│       │       │       googletest.propertiesui.xml
+│       │       │       
+│       │       ├───1046
+│       │       │       googletest.propertiesui.xml
+│       │       │       
+│       │       ├───1049
+│       │       │       googletest.propertiesui.xml
+│       │       │       
+│       │       ├───1055
+│       │       │       googletest.propertiesui.xml
+│       │       │       
+│       │       ├───2052
+│       │       │       googletest.propertiesui.xml
+│       │       │       
+│       │       └───include
+│       │           └───gtest
+│       │               │   gtest-death-test.h
+│       │               │   gtest-message.h
+│       │               │   gtest-param-test.h
+│       │               │   gtest-param-test.h.pump
+│       │               │   gtest-printers.h
+│       │               │   gtest-spi.h
+│       │               │   gtest-test-part.h
+│       │               │   gtest-typed-test.h
+│       │               │   gtest.h
+│       │               │   gtest_pred_impl.h
+│       │               │   gtest_prod.h
+│       │               │   
+│       │               └───internal
+│       │                   │   gtest-death-test-internal.h
+│       │                   │   gtest-filepath.h
+│       │                   │   gtest-internal.h
+│       │                   │   gtest-linked_ptr.h
+│       │                   │   gtest-param-util-generated.h
+│       │                   │   gtest-param-util-generated.h.pump
+│       │                   │   gtest-param-util.h
+│       │                   │   gtest-port-arch.h
+│       │                   │   gtest-port.h
+│       │                   │   gtest-string.h
+│       │                   │   gtest-tuple.h
+│       │                   │   gtest-tuple.h.pump
+│       │                   │   gtest-type-util.h
+│       │                   │   gtest-type-util.h.pump
+│       │                   │   
+│       │                   └───custom
+│       │                           gtest-port.h
+│       │                           gtest-printers.h
+│       │                           gtest.h
+│       │                           README.md
+│       │                           
+│       └───lib
+│           └───native
+│               └───v140
+│                   └───windesktop
+│                       └───msvcstl
+│                           └───static
+│                               └───rt-dyn
+│                                   ├───arm
+│                                   │   ├───Debug
+│                                   │   │       gtest.pdb
+│                                   │   │       gtestd.lib
+│                                   │   │       gtest_main.pdb
+│                                   │   │       gtest_maind.lib
+│                                   │   │       
+│                                   │   └───Release
+│                                   │           gtest.lib
+│                                   │           gtest.pdb
+│                                   │           gtest_main.lib
+│                                   │           gtest_main.pdb
+│                                   │           
+│                                   ├───arm64
+│                                   │   ├───Debug
+│                                   │   │       gtest.pdb
+│                                   │   │       gtestd.lib
+│                                   │   │       gtest_main.pdb
+│                                   │   │       gtest_maind.lib
+│                                   │   │       
+│                                   │   └───Release
+│                                   │           gtest.lib
+│                                   │           gtest.pdb
+│                                   │           gtest_main.lib
+│                                   │           gtest_main.pdb
+│                                   │           
+│                                   ├───x64
+│                                   │   ├───Debug
+│                                   │   │       gtest.pdb
+│                                   │   │       gtestd.lib
+│                                   │   │       gtest_main.pdb
+│                                   │   │       gtest_maind.lib
+│                                   │   │       
+│                                   │   └───Release
+│                                   │           gtest.lib
+│                                   │           gtest.pdb
+│                                   │           gtest_main.lib
+│                                   │           gtest_main.pdb
+│                                   │           
+│                                   └───x86
+│                                       ├───Debug
+│                                       │       gtest.pdb
+│                                       │       gtestd.lib
+│                                       │       gtest_main.pdb
+│                                       │       gtest_maind.lib
+│                                       │       
+│                                       └───Release
+│                                               gtest.lib
+│                                               gtest.pdb
+│                                               gtest_main.lib
+│                                               gtest_main.pdb
+│                                               
+├───ThreadManagerShouldTest
+│   │   packages.config
+│   │   pch.cpp
+│   │   pch.h
+│   │   ThreadManagerShouldTest.vcxproj
+│   │   ThreadManagerShouldTest.vcxproj.user
+│   │   ThreadManagerShouldTests.cpp
+│   │   
+│   └───x64
+│       └───Debug
+│           │   pch.obj
+│           │   ThreadManagerShouldTest.log
+│           │   ThreadManagerShouldTest.vcxproj.CopyComplete
+│           │   ThreadManagerShouldTest.vcxproj.FileListAbsolute.txt
+│           │   ThreadManagerShouldTests.obj
+│           │   ThreadManagerTests.Build.CppClean.log
+│           │   ThreadManagerTests.exe.recipe
+│           │   ThreadManagerTests.pch
+│           │   vc143.pdb
+│           │   
+│           └───ThreadMa.d3515d04.tlog
+│                   CL.command.1.tlog
+│                   Cl.items.tlog
+│                   CL.read.1.tlog
+│                   CL.write.1.tlog
+│                   CopyLocal.read.1u.tlog
+│                   CopyLocal.write.1u.tlog
+│                   link.command.1.tlog
+│                   link.read.1.tlog
+│                   link.write.1.tlog
+│                   ThreadManagerTests.lastbuildstate
+│                   
+└───x64
+    └───Debug
+            gtest.pdb
+            gtest_main.pdb
+            OptimalNumberOfThreads.exe
+            OptimalNumberOfThreads.pdb
+            ThreadManagerTests.exe
+            ThreadManagerTests.exe.gta.testdurations
+            ThreadManagerTests.ilk
+            ThreadManagerTests.pdb
+            
