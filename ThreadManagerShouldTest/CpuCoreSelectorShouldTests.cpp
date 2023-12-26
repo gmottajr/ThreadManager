@@ -1,8 +1,8 @@
 #include "pch.h"
 
 #include <gtest/gtest.h>
-#include "../OptimalNumberOfThreads/ThreadManager.hpp"
-#include "../OptimalNumberOfThreads/ThreadManager.cpp"
+#include "../OptimalNumberOfThreads/CpuCoreSelector.hpp"
+#include "../OptimalNumberOfThreads/CpuCoreSelector.cpp"
 
 class ThreadManagerShould : public ::testing::Test {
 protected:
@@ -11,28 +11,28 @@ protected:
 
 // Positive Test Cases
 TEST_F(ThreadManagerShould, ReturnAllCoresWhenAllOptionIsUsed) {
-    int threadsToUse = ThreadManager::getOptimalThreadCount(ThreadOption::All);
+    int threadsToUse = CpuCoreSelector::getOptimalCount(CpuSelectionOption::All);
     EXPECT_EQ(threadsToUse, std::thread::hardware_concurrency());
 }
 
 TEST_F(ThreadManagerShould, ReturnHalfCoresWhenHalfOptionIsUsed) {
-    int threadsToUse = ThreadManager::getOptimalThreadCount(ThreadOption::Half);
+    int threadsToUse = CpuCoreSelector::getOptimalCount(CpuSelectionOption::Half);
     EXPECT_EQ(threadsToUse, std::thread::hardware_concurrency() / 2);
 }
 
 TEST_F(ThreadManagerShould, ReturnThirdCoresWhenThirdOptionIsUsed) {
-    int threadsToUse = ThreadManager::getOptimalThreadCount(ThreadOption::Third);
+    int threadsToUse = CpuCoreSelector::getOptimalCount(CpuSelectionOption::Third);
     EXPECT_EQ(threadsToUse, std::thread::hardware_concurrency() / 3);
 }
 
 TEST_F(ThreadManagerShould, ReturnHalfCoresWhenQuarterOptionIsUsed) {
-    int threadsToUse = ThreadManager::getOptimalThreadCount(ThreadOption::Quarter);
+    int threadsToUse = CpuCoreSelector::getOptimalCount(CpuSelectionOption::Quarter);
     EXPECT_EQ(threadsToUse, std::thread::hardware_concurrency() / 4);
 }
 
 TEST_F(ThreadManagerShould, ReturnSpecificNumberWhenSpecificOptionAndNumberAreGiven) {
     unsigned int specificNumber = 4;
-    int threadsToUse = ThreadManager::getOptimalThreadCount(ThreadOption::Specific, specificNumber);
+    int threadsToUse = CpuCoreSelector::getOptimalCount(CpuSelectionOption::Specific, specificNumber);
     EXPECT_EQ(threadsToUse, specificNumber);
 }
 
@@ -40,7 +40,7 @@ TEST_F(ThreadManagerShould, ReturnSpecificNumberWhenSpecificOptionAndNumberAreGi
 TEST_F(ThreadManagerShould, CapSpecificNumberAtMaxCores) {
     unsigned int largeNumber = 10000;  // Arbitrary large number
     unsigned int nCores = std::thread::hardware_concurrency();
-    int threadsToUse = ThreadManager::getOptimalThreadCount(ThreadOption::Specific, largeNumber);
+    int threadsToUse = CpuCoreSelector::getOptimalCount(CpuSelectionOption::Specific, largeNumber);
     EXPECT_EQ(threadsToUse, nCores);
 }
 
@@ -50,7 +50,7 @@ TEST_F(ThreadManagerShould, CapSpecificNumberAtMaxCores) {
 // This requires a bit of hacking since enum class doesn't allow invalid values directly
 // A possible approach is to cast an invalid integer to the enum class
 TEST_F(ThreadManagerShould, HandleInvalidEnumValueGracefully) {
-    int threadsToUse = ThreadManager::getOptimalThreadCount(static_cast<ThreadOption>(-1));
+    int threadsToUse = CpuCoreSelector::getOptimalCount(static_cast<CpuSelectionOption>(-1));
     // default behavior, defaulting to 1 thread
     EXPECT_EQ(threadsToUse, 1);
 }

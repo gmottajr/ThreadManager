@@ -2,7 +2,7 @@
 #pragma once
 #include <thread>
 
-enum class ThreadOption {
+enum class CpuSelectionOption {
     All, Half, Third, Quarter, Specific
 };
 
@@ -13,10 +13,10 @@ enum class ThreadOption {
 ///     getOptimalThreadCount method can be used to retrieve the calculated number of threads.
 ///     The class encapsulates the logic for determining the number of threads, making it reusable and easy to integrate.
 /// </summary>
-class ThreadManager
+class CpuCoreSelector
 {
 public:
-    static unsigned int getOptimalThreadCount(ThreadOption option, unsigned int specificCount = 0);
+    static unsigned int getOptimalCount(CpuSelectionOption option, unsigned int specificCount = 0);
 };
 
 

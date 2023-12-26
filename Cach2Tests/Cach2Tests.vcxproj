@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{1c333baf-4355-4c06-a83e-ce4051433479}</ProjectGuid>
-    <RootNamespace>OptimalNumberOfThreads</RootNamespace>
+    <ProjectGuid>{5dd09652-0e4c-4257-b408-b7fe7f2caf53}</ProjectGuid>
+    <RootNamespace>Cach2Tests</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,11 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="OptimalNumberOfThreads.cpp" />
-    <ClCompile Include="CpuCoreSelector.cpp" />
+    <ProjectReference Include="..\OptimalNumberOfThreads\OptimalNumberOfThreads.vcxproj">
+      <Project>{1c333baf-4355-4c06-a83e-ce4051433479}</Project>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CpuCoreSelector.hpp" />
+    <ClCompile Include="CpuCoreSelectorCatch2Should.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
