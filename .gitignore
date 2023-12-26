@@ -4,3 +4,7 @@
 /.vs/OptimalNumberOfThreads
 /x64/Debug
 /packages/Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7
+/build
+/.vscode
+/Cach2Tests/x64/Debug
+/Cach2Tests/Cach2Tests.vcxproj.user
