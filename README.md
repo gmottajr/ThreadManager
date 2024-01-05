@@ -1,7 +1,7 @@
-# ThreadManager Class :gear:
+# CpuCoreSelector Class :gear:
 
 ## Overview :book:
-The `ThreadManager` class, coded in C++, is designed to streamline and optimize thread management across different computing environments with varying hardware capabilities. Its primary function is to determine the optimal number of threads to utilize for a given task, based on the computing resources available, particularly the number of CPU cores.
+The `CpuCoreSelector` class, coded in C++, is designed to streamline and optimize thread management across different computing environments with varying hardware capabilities. Its primary function is to determine the optimal number of threads to utilize for a given task, based on the computing resources available, particularly the number of CPU cores.
 
 ### Key Features and Problem Solving :bulb:
 1. **Adaptability to Different Systems** :computer:
@@ -29,33 +29,33 @@ The `ThreadManager` class, coded in C++, is designed to streamline and optimize 
    - Simplifies the development process by abstracting thread management complexities.
 
 ### Conclusion :checkered_flag:
-The `ThreadManager` class is a C++ solution for optimizing multi-threaded applications to run efficiently on diverse hardware. It leads to improved performance, better resource management, and scalable software.
+The `CpuCoreSelector` class is a C++ solution for optimizing multi-threaded applications to run efficiently on diverse hardware. It leads to improved performance, better resource management, and scalable software.
 
 ### Advantages in Cohesion, Maintainability, and Scalability :dart:
 
-The design and implementation of the `ThreadManager` class focus on promoting high cohesion, easy maintainability, and excellent scalability. By encapsulating thread management logic within a single, well-defined class, we achieve a high level of cohesion, ensuring that each part of the class is directly related to thread management. This focused approach simplifies understanding and debugging the code, thereby enhancing maintainability. The class's adaptability to different system capabilities, facilitated by clear and manageable options (`All`, `Half`, `Specific`), makes it highly scalable. It seamlessly accommodates a wide range of hardware configurations, from high-performance servers with numerous cores to consumer-grade laptops with fewer cores. Consequently, applications using `ThreadManager` can easily scale up or down based on the available hardware, without requiring significant code changes. This scalability is crucial in today's diverse computing environments, where applications must perform optimally across a spectrum of hardware specifications.
+The design and implementation of the `CpuCoreSelector` class focus on promoting high cohesion, easy maintainability, and excellent scalability. By encapsulating thread management logic within a single, well-defined class, we achieve a high level of cohesion, ensuring that each part of the class is directly related to thread management. This focused approach simplifies understanding and debugging the code, thereby enhancing maintainability. The class's adaptability to different system capabilities, facilitated by clear and manageable options (`All`, `Half`, `Specific`), makes it highly scalable. It seamlessly accommodates a wide range of hardware configurations, from high-performance servers with numerous cores to consumer-grade laptops with fewer cores. Consequently, applications using `CpuCoreSelector` can easily scale up or down based on the available hardware, without requiring significant code changes. This scalability is crucial in today's diverse computing environments, where applications must perform optimally across a spectrum of hardware specifications.
 
 ---
 
 ## How to Use :wrench:
-*Include instructions on how to integrate and use the `ThreadManager` class in a C++ project.*
-Integrating and using the `ThreadManager` class in your C++ project is straightforward. Follow these steps to get started:
+*Include instructions on how to integrate and use the `CpuCoreSelector` class in a C++ project.*
+Integrating and using the `CpuCoreSelector` class in your C++ project is straightforward. Follow these steps to get started:
 
-1. **Include the ThreadManager Class**:
-   - Ensure that the `ThreadManager.h` file is included in your project's directory structure, preferably in an `include` or `headers` directory.
+1. **Include the CpuCoreSelector Class**:
+   - Ensure that the `CpuCoreSelector.h` file is included in your project's directory structure, preferably in an `include` or `headers` directory.
 
-2. **Add the ThreadManager to Your Project**:
-   - Include the `ThreadManager` header in your source file:
+2. **Add the CpuCoreSelector to Your Project**:
+   - Include the `CpuCoreSelector` header in your source file:
      ```cpp
-     #include "ThreadManager.h"
+     #include "CpuCoreSelector.h"
      ```
 
-3. **Instantiate the ThreadManager**:
-   - Create an instance of `ThreadManager` using one of the predefined options (`All`, `Half`, `Specific`). For the `Specific` option, also provide the desired number of threads:
+3. **Instantiate the CpuCoreSelector**:
+   - Create an instance of `CpuCoreSelector` using one of the predefined options (`All`, `Half`, `Specific`). For the `Specific` option, also provide the desired number of threads:
      ```cpp
-     ThreadManager tmAll(ThreadOption::All);
-     ThreadManager tmHalf(ThreadOption::Half);
-     ThreadManager tmSpecific(ThreadOption::Specific, 4); // Specify 4 threads
+     CpuCoreSelector tmAll(ThreadOption::All);
+     CpuCoreSelector tmHalf(ThreadOption::Half);
+     CpuCoreSelector tmSpecific(ThreadOption::Specific, 4); // Specify 4 threads
      ```
 
 4. **Use the Optimal Thread Count**:
@@ -68,14 +68,14 @@ Integrating and using the `ThreadManager` class in your C++ project is straightf
    - Utilize the optimal thread count in your application's threading logic, ensuring efficient use of system resources.
 
 6. **Compile and Run**:
-   - Compile your project with the `ThreadManager` class included. Ensure your compiler and build system are configured to include the directory where `ThreadManager.h` is located.
+   - Compile your project with the `CpuCoreSelector` class included. Ensure your compiler and build system are configured to include the directory where `CpuCoreSelector.h` is located.
 
-By following these steps, you can easily integrate the `ThreadManager` into your C++ projects, enabling efficient and dynamic thread management tailored to the hardware capabilities of the executing system.
+By following these steps, you can easily integrate the `CpuCoreSelector` into your C++ projects, enabling efficient and dynamic thread management tailored to the hardware capabilities of the executing system.
 
 ---
 
 ## Contributing :raising_hand:
-We welcome contributions from developers of all skill levels. If you're interested in helping improve the `ThreadManager` project, here's how you can get started:
+We welcome contributions from developers of all skill levels. If you're interested in helping improve the `CpuCoreSelector` project, here's how you can get started:
 
 1. **Fork the Repository**:
    - Start by forking the project repository to your own GitHub account.
@@ -111,7 +111,7 @@ We welcome contributions from developers of all skill levels. If you're interest
 10. **Stay Open to Feedback**:
     - Be open to and respectful of feedback and suggestions from other project contributors.
 
-By following these guidelines, you can contribute effectively to the `ThreadManager` project and help make it better for everyone. We look forward to your contributions!
+By following these guidelines, you can contribute effectively to the `CpuCoreSelector` project and help make it better for everyone. We look forward to your contributions!
 
 
 ---
